@@ -47,6 +47,17 @@ class EarlyGoodbye(Rule):
                         turn_index=i, evidence=t.text)
                     break
             else:
+                # case 1b: user objects right after the farewell that time is left
+                nxt_users = [j for j in range(i + 1, min(n, i + 4))
+                             if turns[j].role == USER]
+                if nxt_users and any_match(TIME_LEFT_OBJECTION,
+                                           turns[nxt_users[0]].text):
+                    yield self.finding(
+                        "error",
+                        "User objected right after the farewell that time is "
+                        "left, but the agent ended the call anyway.",
+                        turn_index=i, evidence=t.text)
+                    continue
                 # case 2: timed call, farewell well before the limit
                 if t.t is not None and max_dur and t.t < max_dur - min_remaining_s \
                         and t.t < max_dur * end_frac:

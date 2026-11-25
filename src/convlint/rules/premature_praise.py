@@ -31,11 +31,11 @@ class PrematurePraise(Rule):
             if t.t is not None and last_t:
                 if t.t < last_t * end_frac:
                     yield self.finding(
-                        "warn",
+                        self.default_severity,
                         "Farewell-sounding praise well before the end of the call.",
                         turn_index=i, evidence=t.text)
             elif i < (n - 1) * end_frac:
                 yield self.finding(
-                    "warn",
+                    self.default_severity,
                     "Farewell-sounding praise in the middle of the call.",
                     turn_index=i, evidence=t.text)

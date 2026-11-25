@@ -57,7 +57,7 @@ TIME_LEFT_OBJECTION = bank([
     "why stop", "why are we stopping", "why end", "why are you ending",
     "so early", "already over", "already done", "already finished",
     "abhi time hai", "abhi toh time hai", "time bacha hai", "time bacha",
-    "abhi toh", "itni jaldi", "kyu stop", "kyun stop", "kyu band",
+    "abhi toh", "abhi bacha", "bacha hai", "itni jaldi", "kyu stop", "kyun stop", "kyu band",
     "kyun band", "itna jaldi khatam", "abhi khatam",
     "अभी टाइम है", "टाइम बचा है", "इतनी जल्दी", "क्यों बंद", "अभी तो",
 ])
@@ -117,16 +117,17 @@ PASSIVE_ANSWERS = {
     "nope", "theek hai", "thik hai", "accha", "achha", "acha", "shayad",
     "maybe", "samajh nahi aaya", "samajh nahi", "हाँ", "हां", "नहीं", "ठीक है",
     "पता नहीं", "अच्छा", "शायद", "समझ नहीं आया",
+    "हम्म", "ह्म्म", "नहीं पता", "जी", "ठीक",
 }
 
 
 def is_passive_answer(text: str) -> bool:
-    t = text.strip().lower().strip(" .!?,")
+    t = text.strip().lower().strip(" .!?,।")
     if t in PASSIVE_ANSWERS:
         return True
     words = t.split()
     return len(words) <= 2 and all(
-        w.strip(" .!?,") in PASSIVE_ANSWERS for w in words
+        w.strip(" .!?,।") in PASSIVE_ANSWERS for w in words
     )
 
 

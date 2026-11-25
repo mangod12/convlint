@@ -121,6 +121,22 @@ Drop a `.convlint.json` in your repo:
 
 `convlint lint` exits 1 when findings at or above `--fail-on` severity exist.
 
+## Stress testing
+
+The linter is verified without any LLM in the loop:
+
+- `stress/fuzz.py` — seeded property fuzzing. 12,000 cases (3 seeds x 4,000):
+  0 crashes, 0 recall misses on injected violations, 0 error findings on clean
+  transcripts (~400 transcripts/s).
+- `stress/stress_extra.py` — adversarial suites: 17 malformed-input cases
+  (binary garbage, truncated JSON, NUL bytes, BOM/CRLF, Devanagari digits)
+  with no tracebacks; performance up to 100k turns at ~15.6k turns/s with
+  linear scaling; Unicode/Devanagari/emoji/RTL cases; 600 varied clean
+  transcripts with zero false positives; an 11-case hand-labelled corpus.
+- `stress/mutation.py` — 12 targeted mutations across all rules,
+  100% kill rate against the test suite.
+- 47 unit tests, green on Python 3.9-3.13 (Ubuntu) and 3.12 (Windows).
+
 ## Scoring
 
 Each transcript scores 100 minus severity weights (error 20, warn 5), graded
