@@ -17,4 +17,5 @@ jobs:
       - run: pip install -e '.[dev]'
       - run: python -m pytest -q
       - run: python stress/fuzz.py --cases 500 --seed 1
-      - run: convlint lint examples/ --format json > /dev/null
+      - run: python -m convlint lint examples/ --format json > /dev/null || test $? -eq 1
+      - run: python -m convlint lint examples/good_first_call.txt --format json > /dev/null
