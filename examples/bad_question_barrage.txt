@@ -1,0 +1,16 @@
+[00:00] Agent: What is your name?
+[00:04] User: Ramesh.
+[00:06] Agent: Where are you from Ramesh?
+[00:09] User: Patna.
+[00:11] Agent: What do you do in Patna?
+[00:14] User: Pata nahi... study.
+[00:17] Agent: Which class are you in?
+[00:20] User: Haan... tenth.
+[00:22] Agent: Do you like English?
+[00:25] User: Hmm.
+[00:27] Agent: Why do you want to learn English?
+[00:30] User: Pata nahi.
+[00:33] Agent: What is your favourite subject?
+[00:36] User: Nahi pata.
+[00:38] Agent: Okay. Maybe try the app for practice. Bye!
+[00:42] User: Bas itna hi? Ok bye.

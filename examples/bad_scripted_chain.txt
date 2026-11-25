@@ -1,0 +1,21 @@
+[00:00] Agent: Let's do imagination practice. Now imagine you are at a bus stop, say 'one ticket please'.
+[00:08] User: One ticket please.
+[00:11] Agent: Now imagine you are at a shop, say 'how much is this'.
+[00:17] User: How much is this.
+[00:20] Agent: Now imagine you meet your friend, say 'how are you'.
+[00:26] User: How are you.
+[00:29] Agent: Now imagine you are at a restaurant, say 'menu please'.
+[00:35] User: Menu please.
+[00:38] Agent: Now imagine you are at a bank, say 'I want to open account'.
+[00:45] User: I want to open account.
+[00:48] Agent: Now imagine you are at a hospital, say 'I need a doctor'.
+[00:55] User: I need a doctor.
+[00:58] Agent: Now imagine you are at school, say 'may I come in'.
+[01:04] User: May I come in.
+[01:07] Agent: Now imagine you are at a station, say 'which platform'.
+[01:13] User: Which platform.
+[01:16] Agent: Now imagine you are at a hotel, say 'I have a booking'.
+[01:22] User: I have a booking.
+[01:25] Agent: Now imagine you are at a market, say 'it is too costly'.
+[01:31] User: It is too costly.
+[01:34] Agent: Very good practice today!

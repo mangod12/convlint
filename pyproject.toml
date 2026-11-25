@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convlint"
+version = "0.1.0"
+description = "Deterministic linter for voice and chat agent transcripts. No LLM judge. Hinglish-aware."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Anshaj Kumar"}]
+keywords = ["voice-ai", "agents", "transcripts", "qa", "lint", "hinglish", "evals"]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+convlint = "convlint.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mangod12/convlint"
+
+[tool.setuptools.packages.find]
+where = ["src"]

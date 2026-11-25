@@ -1,0 +1,15 @@
+{"meta": {"max_duration_s": 600}, "turns": [
+{"role": "agent", "text": "What do you do for work?", "t": 0},
+{"role": "user", "text": "I am a delivery rider.", "t": 5},
+{"role": "agent", "text": "Nice! And what time do you start work?", "t": 10},
+{"role": "user", "text": "Morning 8 baje.", "t": 16},
+{"role": "agent", "text": "So what do you do for work?", "t": 22},
+{"role": "user", "text": "Maine toh bataya, delivery rider hoon!", "t": 28},
+{"role": "agent", "text": "Oh sorry. And what work do you do?", "t": 35},
+{"role": "user", "text": "I already told you, delivery!", "t": 41},
+{"role": "agent", "text": "Is that enough for today? Should we stop?", "t": 48},
+{"role": "user", "text": "Nahi, continue karo.", "t": 53},
+{"role": "agent", "text": "Ok. Shall we wrap up now? Itna kaafi hai?", "t": 60},
+{"role": "user", "text": "Haan theek hai bye.", "t": 66},
+{"role": "agent", "text": "Bye bye, take care!", "t": 70}
+]}

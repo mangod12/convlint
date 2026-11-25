@@ -1,0 +1,7 @@
+[00:00] Agent: Welcome back! Last time you told me about your daughter's school admission. How did it go?
+[00:07] User: This is my first call. Pehli baar call kar raha hoon.
+[00:12] Agent: Oh! Sorry about that. Welcome then. What do you do?
+[00:18] User: Main farmer hoon.
+[00:21] Agent: Great. As we discussed last week, your English is improving fast.
+[00:28] User: But this is my first call na?
+[00:33] Agent: Yes yes, my mistake. Let's begin.

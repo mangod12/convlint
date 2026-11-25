@@ -1,0 +1,10 @@
+{"meta": {"max_duration_s": 600, "agent_name": "Riya"}, "turns": [
+{"role": "agent", "text": "Namaste! What would you like to practice today?", "t": 0},
+{"role": "user", "text": "I want to practice interview English.", "t": 6},
+{"role": "agent", "text": "Great choice. Tell me about yourself.", "t": 10},
+{"role": "user", "text": "I am Rahul. I work in a bank for two years.", "t": 18},
+{"role": "agent", "text": "Very good Rahul. That's all for today, goodbye! Try the app for more practice.", "t": 26},
+{"role": "user", "text": "Arre abhi toh time hai, why stop? 8 minutes left.", "t": 33},
+{"role": "agent", "text": "You did great today! Phir milte hain, bye bye!", "t": 40},
+{"role": "user", "text": "Ok bye...", "t": 47}
+]}

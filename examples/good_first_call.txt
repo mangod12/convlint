@@ -1,0 +1,25 @@
+[00:00] Agent: Namaste! Welcome to Sahi English. Main Riya hoon. Is this your first call with us?
+[00:05] User: Haan, first call hai.
+[00:08] Agent: Bahut badhiya! Let's start simple. Tell me, what do you do?
+[00:14] User: I work in a shop.
+[00:18] Agent: Nice. A shop. So you talk to customers every day. What do you say when a customer comes in?
+[00:26] User: I say welcome sir, what you want?
+[00:32] Agent: Good start! In English we say 'what would you like'. Try saying it once.
+[00:40] User: What would you like?
+[00:44] Agent: Perfect. That sounded natural. Now your customer says 'I want a shirt'. What do you ask next?
+[00:54] User: Which colour you want?
+[00:59] Agent: Almost! 'Which colour would you like?' Say it with me.
+[01:06] User: Which colour would you like?
+[01:11] Agent: Very good. You picked that up fast. We still have nine minutes, so let's keep going. What sizes do you have in your shop?
+[01:22] User: Small, medium, large sab hain.
+[01:26] Agent: Great. So if a customer is tall, which size will you suggest?
+[01:33] User: I will suggest large size.
+[01:38] Agent: Correct! See, you made a full sentence. Let's do one more. The customer says the shirt is costly. What can you say?
+[01:50] User: Sir quality is very good, that is why.
+[01:56] Agent: Excellent answer. That is exactly what a good salesperson says. You are doing really well today, and we still have time, so tell me - do you enjoy talking to customers?
+[02:08] User: Haan, sometimes.
+[02:11] Agent: That's honest. It gets easier with practice, promise.
+[09:30] Agent: We are almost at ten minutes now. You did really well in your first call.
+[09:42] User: Thank you!
+[09:45] Agent: Same time tomorrow? Goodbye and take care!
+[09:50] User: Bye!

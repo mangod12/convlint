@@ -1,0 +1,7 @@
+[00:00] Agent: This course is for learners from 18 to 70 years old.
+[00:06] User: My age is 71. Can I join?
+[00:10] Agent: Sorry, the limit is 18 to 60 years only.
+[00:16] User: But you just said 70!
+[00:19] Agent: No no, I said 18 to 60 years.
+[00:24] User: That is not what you said. Maine suna 70.
+[00:29] Agent: The age limit is 18 to 60 years, I am sure.
