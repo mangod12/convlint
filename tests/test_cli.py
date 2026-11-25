@@ -12,18 +12,22 @@ EX = os.path.join(os.path.dirname(__file__), "..", "examples")
 
 class TestCli(unittest.TestCase):
     def test_lint_examples_json(self):
-        with tempfile.NamedTemporaryFile("r", suffix=".json") as fh:
-            rc = main(["lint", EX, "--format", "json", "--output", fh.name])
+        with tempfile.TemporaryDirectory() as td:
+            out = os.path.join(td, "out.json")
+            rc = main(["lint", EX, "--format", "json", "--output", out])
             self.assertEqual(rc, 1)  # bad examples contain errors
-            data = json.load(fh)
+            with open(out, encoding="utf-8") as fh:
+                data = json.load(fh)
             self.assertEqual(data["tool"], "convlint")
             self.assertEqual(len(data["reports"]), 7)
 
     def test_sarif(self):
-        with tempfile.NamedTemporaryFile("r", suffix=".json") as fh:
-            rc = main(["lint", EX, "--format", "sarif", "--output", fh.name])
+        with tempfile.TemporaryDirectory() as td:
+            out = os.path.join(td, "out.sarif")
+            rc = main(["lint", EX, "--format", "sarif", "--output", out])
             self.assertEqual(rc, 1)
-            data = json.load(fh)
+            with open(out, encoding="utf-8") as fh:
+                data = json.load(fh)
             self.assertEqual(data["version"], "2.1.0")
             self.assertTrue(data["runs"][0]["results"])
 
